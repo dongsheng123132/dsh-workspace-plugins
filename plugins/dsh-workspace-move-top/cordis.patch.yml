@@ -1,0 +1,4 @@
+- insert:
+    - id: wshub-workspace-move-top
+      name: dsh-plugin-workspace-move-top
+      # Stateless one-shot ordering; no favorites or saved plugin state.

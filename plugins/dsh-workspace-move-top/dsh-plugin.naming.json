@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "policy": "dsh-plugin-naming/v1",
+  "plugin": {
+    "namespace": "dongsheng123132",
+    "name": "workspace-move-top",
+    "coordinate": "dongsheng123132/workspace-move-top",
+    "packageName": "dsh-plugin-workspace-move-top"
+  },
+  "names": {
+    "pluginNames": [
+      "workspace-move-top"
+    ],
+    "loaderIds": [
+      "wshub-workspace-move-top"
+    ],
+    "services": [
+      "wshubWorkspaceMoveTop"
+    ],
+    "tools": [],
+    "commands": [],
+    "skills": [],
+    "skillProviders": [],
+    "events": [],
+    "settingsNamespaces": [],
+    "routes": [
+      {
+        "kind": "exact",
+        "path": "/api/plugins/wshub-workspace-move-top/move"
+      }
+    ]
+  }
+}

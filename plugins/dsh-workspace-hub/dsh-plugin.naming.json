@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "policy": "dsh-plugin-naming/v1",
+  "plugin": {
+    "namespace": "dongsheng123132",
+    "name": "workspace-hub",
+    "coordinate": "dongsheng123132/workspace-hub",
+    "packageName": "dsh-plugin-workspace-hub"
+  },
+  "names": {
+    "pluginNames": [
+      "workspace-hub"
+    ],
+    "loaderIds": [
+      "wshub-workspace-hub"
+    ],
+    "services": [
+      "wshubWorkspaceHub"
+    ],
+    "tools": [
+      "workspace_hub_list",
+      "workspace_hub_sync",
+      "workspace_hub_refresh",
+      "workspace_hub_remote_sync"
+    ],
+    "commands": [],
+    "skills": [],
+    "skillProviders": [],
+    "events": [],
+    "settingsNamespaces": [],
+    "routes": []
+  }
+}

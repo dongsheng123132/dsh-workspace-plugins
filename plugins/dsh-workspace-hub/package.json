@@ -1,0 +1,82 @@
+{
+  "name": "dsh-plugin-workspace-hub",
+  "version": "0.3.6",
+  "description": "Bring project directories from your other AI tools into the DSH sidebar. Includes the scanner.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "hub/",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "dsh-plugin.naming.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/*.test.mjs",
+    "check": "npm run typecheck && npm run build && npm test",
+    "prepack": "npm run build",
+    "pretest": "npm run build"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5",
+    "@deepseek-ai/dsh-tools": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-workspace": "0.2.1-rc.5",
+    "@deepseek-ai/schemastery": "~3.18.5"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.0.5",
+    "@deepseek-ai/dsh-system-prompt": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-tools": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-workspace": "0.2.1-rc.5",
+    "@deepseek-ai/schemastery": "3.18.5",
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "workspace",
+    "workspace-sync",
+    "project-sync",
+    "sidebar",
+    "workdir",
+    "workspace-hub",
+    "wshub",
+    "ai-workspace",
+    "claude-code",
+    "codex",
+    "cursor",
+    "trae",
+    "workbuddy",
+    "kimi",
+    "antigravity",
+    "ai-tools",
+    "migration"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongsheng123132/dsh-workspace-plugins.git",
+    "directory": "plugins/dsh-workspace-hub"
+  }
+}

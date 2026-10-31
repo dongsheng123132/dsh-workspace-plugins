@@ -1,0 +1,22 @@
+# dsh-plugin-workspace-hub bundle patch.
+#
+# A bundle's `dsh.bundle.patch` is ONE insert over the empty profile root. The
+# profile then addresses this row by id, and the user's own cordis.patch.yml is
+# applied after every bundle layer, so a row here can be overridden without
+# touching the package.
+#
+# Row keys:
+#   id   — stable composition key (`wshub-workspace-hub`, publisher-prefixed)
+#   name — module specifier resolved through the profile, i.e. the npm package
+#
+# All tunables have validated defaults in `src/config.ts`; uncomment `config`
+# only to depart from them. A patch replaces the whole config, so restate every
+# key you want to keep.
+- insert:
+    - id: wshub-workspace-hub
+      name: dsh-plugin-workspace-hub
+      # config:
+      #   ledgerPath: ~/.workspace-hub/ledger.json   # default: $WSHUB_HOME/ledger.json
+      #   maxAdd: 30                                 # 0 = unlimited
+      #   dryRun: false                              # true = plan only
+      #   intervalSeconds: 0                         # 0 = activation + tool calls only
