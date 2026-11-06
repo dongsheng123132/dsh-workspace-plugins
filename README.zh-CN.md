@@ -1,5 +1,7 @@
 # DeepSeek Harness 工作区插件
 
+作者 / 维护者：贺去病（贺方升 / Dosen）· [hequbing.com](https://www.hequbing.com)
+
 两个独立、极简的 DSH 左侧工作区插件。[English](README.md)
 
 ## 工作区同步（Workspace Hub）
