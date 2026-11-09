@@ -1,6 +1,6 @@
 # Move to Top for DeepSeek Harness
 
-> Move to Top now lives in its own repository: [dsh-plugin-workspace-move-top](https://github.com/dongsheng123132/dsh-plugin-workspace-move-top). This directory remains the source of the published 0.2.1 package.
+> Move to Top now lives in its own repository: [dsh-move-up](https://github.com/dongsheng123132/dsh-move-up). This directory remains the source of the published 0.2.1 package.
 
 **Maintainer / Author：He Fangsheng (贺方升 / 贺去病; also known as Dosen) · [hequbing.com](https://www.hequbing.com)**
 
@@ -18,10 +18,10 @@ The same repository also carries **Workspace Hub**, which brings project directo
 - 7 KB npm package, no runtime dependencies, no saved state, no background work.
 - Does not require Workspace Hub.
 
-Package: [`dsh-plugin-workspace-move-top`](https://www.npmjs.com/package/dsh-plugin-workspace-move-top)
+Package: [`dsh-move-up`](https://www.npmjs.com/package/dsh-move-up)
 
 ```sh
-dsh plugin --profile desktop add dsh-plugin-workspace-move-top@0.2.1
+dsh plugin --profile desktop add dsh-move-up@0.2.1
 ```
 
 ## Workspace Hub
