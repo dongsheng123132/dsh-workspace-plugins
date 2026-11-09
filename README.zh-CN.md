@@ -1,5 +1,7 @@
 # DeepSeek Harness 工作区插件：移到最上面
 
+> 移到最上面现在有独立仓库：[dsh-plugin-workspace-move-top](https://github.com/dongsheng123132/dsh-plugin-workspace-move-top)。本目录仍是 npm 已发布 0.2.1 的源码位置。
+
 作者 / 维护者：He Fangsheng (贺方升 / 贺去病; also known as Dosen)· [hequbing.com](https://www.hequbing.com)
 
 工作区菜单里加一项「移到最上面」，点一次只调一次顺序。[English](README.md)
