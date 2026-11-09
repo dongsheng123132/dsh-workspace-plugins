@@ -1,6 +1,6 @@
 # DeepSeek Harness 工作区插件：移到最上面
 
-> 移到最上面现在有独立仓库：[dsh-plugin-workspace-move-top](https://github.com/dongsheng123132/dsh-plugin-workspace-move-top)。本目录仍是 npm 已发布 0.2.1 的源码位置。
+> 移到最上面现在有独立仓库：[dsh-move-up](https://github.com/dongsheng123132/dsh-move-up)。本目录仍是 npm 已发布 0.2.1 的源码位置。
 
 作者 / 维护者：He Fangsheng (贺方升 / 贺去病; also known as Dosen)· [hequbing.com](https://www.hequbing.com)
 
@@ -18,10 +18,10 @@
 - npm 包 7 KB，无运行时依赖，不存状态，不跑后台任务。
 - 不依赖 Workspace Hub，可单独安装。
 
-包：[`dsh-plugin-workspace-move-top`](https://www.npmjs.com/package/dsh-plugin-workspace-move-top)
+包：[`dsh-move-up`](https://www.npmjs.com/package/dsh-move-up)
 
 ```sh
-dsh plugin --profile desktop add dsh-plugin-workspace-move-top@0.2.1
+dsh plugin --profile desktop add dsh-move-up@0.2.1
 ```
 
 ## 工作区同步（Workspace Hub）
