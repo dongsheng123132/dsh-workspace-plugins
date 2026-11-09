@@ -1,22 +1,22 @@
 {
   "format": 1,
   "title": {
-    "en": "Workspace plugins for DeepSeek Harness",
-    "zh": "DSH 工作区插件"
+    "en": "Move to Top for DeepSeek Harness",
+    "zh": "DSH 移到最上面"
   },
   "description": {
-    "en": "Two small, independent DSH sidebar plugins: import project directories from your other AI tools, and move a workspace to the top once without a favorites system.",
-    "zh": "两个独立的小插件：把其它 AI 工具记录的项目目录同步进 DSH 侧栏；以及只调一次顺序的「移到最上面」，不做收藏体系。"
+    "en": "One menu item that moves a workspace to the top of the DSH sidebar once, like a single long drag. No favorites, pins, stars, automatic reordering or startup re-sort.",
+    "zh": "工作区菜单里加一项「移到最上面」，点一次只调一次顺序，等价一次长距离拖动；没有收藏、固定置顶、星标、自动重排或启动重排。"
   },
   "metadata": {
     "categories": {
-      "workspace": {
-        "title": { "en": "Workspace", "zh": "工作区" }
+      "ui": {
+        "title": { "en": "Sidebar UI", "zh": "侧栏界面" }
       }
     },
     "labels": {
-      "sidebar": {
-        "title": { "en": "Sidebar", "zh": "侧栏" }
+      "one-action": {
+        "title": { "en": "One action", "zh": "只做一件事" }
       },
       "open-source": {
         "title": { "en": "Open source", "zh": "开源" }
@@ -32,8 +32,8 @@
         "zh": "移到最上面"
       },
       "description": {
-        "en": "Adds one action to the workspace menu: move a workspace to the top once, like a single long drag. No stars, pinned categories, saved favorites, or automatic reordering.",
-        "zh": "工作区菜单里加一项「移到最上面」，只调整一次顺序，等于一次长距离拖动；没有星标、收藏、固定置顶或自动重排，之后手动排序仍然归你。"
+        "en": "Adds one action to the workspace menu: move a workspace to the top once, through the host workspace registry. No stars, pinned categories, saved favorites, or automatic reordering. 7 KB, no runtime dependencies, no saved state.",
+        "zh": "工作区菜单里加一项「移到最上面」，经宿主 workspace 注册表只调整一次顺序。没有星标、收藏、固定置顶或自动重排；7 KB，零运行时依赖，不存状态。"
       },
       "author": "He Fangsheng",
       "homepage": "https://github.com/dongsheng123132/dsh-workspace-plugins",
@@ -42,42 +42,13 @@
         "directory": "plugins/dsh-workspace-move-top"
       },
       "metadata": {
-        "category": "workspace",
+        "category": "ui",
         "keywords": ["dsh-plugin", "workspace", "move-top", "ordering", "sidebar"],
-        "labels": ["sidebar", "open-source"]
+        "labels": ["one-action", "open-source"]
       },
       "versions": [
         {
           "version": "0.2.1",
-          "publishTimestamp": 1793383362,
-          "source": { "type": "npm" }
-        }
-      ]
-    },
-    {
-      "name": "dsh-plugin-workspace-hub",
-      "title": {
-        "en": "Workspace Hub",
-        "zh": "工作区中枢"
-      },
-      "description": {
-        "en": "Scans the project directories recorded by your other local AI tools, keeps a local ledger, and adds them to the DSH sidebar through the official workspace registry. Optional private-Git transport is off by default.",
-        "zh": "扫描本机其它 AI 工具记录的项目目录，维护一份本地账本，通过官方 workspace registry 补进 DSH 侧栏；可选私有 Git 跨设备同步默认关闭，不碰代码、会话与凭据。"
-      },
-      "author": "He Fangsheng",
-      "homepage": "https://github.com/dongsheng123132/dsh-workspace-plugins",
-      "repository": {
-        "url": "https://github.com/dongsheng123132/dsh-workspace-plugins",
-        "directory": "plugins/dsh-workspace-hub"
-      },
-      "metadata": {
-        "category": "workspace",
-        "keywords": ["dsh-plugin", "workspace", "workspace-sync", "sidebar", "claude-code", "codex", "cursor", "workbuddy"],
-        "labels": ["sidebar", "open-source"]
-      },
-      "versions": [
-        {
-          "version": "0.3.6",
           "publishTimestamp": 1793383362,
           "source": { "type": "npm" }
         }
