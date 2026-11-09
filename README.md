@@ -1,5 +1,7 @@
 # Move to Top for DeepSeek Harness
 
+> Move to Top now lives in its own repository: [dsh-plugin-workspace-move-top](https://github.com/dongsheng123132/dsh-plugin-workspace-move-top). This directory remains the source of the published 0.2.1 package.
+
 **Maintainer / Author：He Fangsheng (贺方升 / 贺去病; also known as Dosen) · [hequbing.com](https://www.hequbing.com)**
 
 One menu item that moves a workspace to the top of the DSH sidebar, once. [中文说明](README.zh-CN.md)
