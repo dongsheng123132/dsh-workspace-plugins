@@ -1,6 +1,6 @@
 # Move to Top for DeepSeek Harness
 
-> Move to Top now lives in its own repository: [dsh-move-up](https://github.com/dongsheng123132/dsh-move-up). This directory remains the source of the published 0.2.1 package.
+> **Move Up has moved:** its current source, installation instructions and updates are at **[github.com/dongsheng123132/dsh-move-up](https://github.com/dongsheng123132/dsh-move-up)**. This repository retains the earlier source and also contains the separate Workspace Hub plugin.
 
 **Maintainer / Author：He Fangsheng (贺方升 / 贺去病; also known as Dosen) · [hequbing.com](https://www.hequbing.com)**
 
@@ -15,13 +15,13 @@ The same repository also carries **Workspace Hub**, which brings project directo
 - Adds exactly one action to the workspace `…` menu.
 - Behaves like a single long drag: the order is written once, and subsequent manual ordering stays yours.
 - No stars, pinned categories, saved favorites, automatic reordering, or startup re-sort. If you never click the item, nothing happens.
-- 7 KB npm package, no runtime dependencies, no saved state, no background work.
+- No runtime dependencies, saved ordering state, or background work.
 - Does not require Workspace Hub.
 
 Package: [`dsh-move-up`](https://www.npmjs.com/package/dsh-move-up)
 
 ```sh
-dsh plugin --profile desktop add dsh-move-up@0.2.1
+dsh plugin --profile desktop add dsh-move-up
 ```
 
 ## Workspace Hub
@@ -42,9 +42,8 @@ dsh plugin --profile desktop add dsh-plugin-workspace-hub@0.3.6
 
 ## Compatibility and privacy
 
-- Tested with **DSH 0.2.1-rc.5 on macOS**. Peer dependencies target that host version; newer hosts may warn on peer resolution.
-- Windows support paths are retained, but a real Windows machine has not been verified.
-- Move to Top uses the current workspace menu DOM because the host has no workspace-menu extension slot. A host UI change may hide the action; it must not reorder workspaces on its own.
+- For the current Move Up version's compatibility, tested platforms and limitations, see its [compatibility documentation](https://github.com/dongsheng123132/dsh-move-up/blob/main/COMPATIBILITY.md).
+- For the legacy code and Workspace Hub in this repository, the historical test baseline was **DSH 0.2.1-rc.5 on macOS**; consult the individual package documentation for its limitations.
 - Workspace Hub reads project-directory metadata and writes a local ledger. Do not publish that ledger or your optional private Git remote.
 - Packages contain no user ledger, device record, npm credentials, or local absolute paths.
 
